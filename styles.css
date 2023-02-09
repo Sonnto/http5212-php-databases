@@ -1,0 +1,18 @@
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+}
+.country {
+  padding: 16px;
+  border: 1px solid darkblue;
+  background-color: azure;
+  margin: 20px;
+  width: 300px;
+  gap: 16px;
+}
