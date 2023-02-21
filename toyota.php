@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 1: Toyota</title>
+    <title>HTTP5212: PHP Assignment 1: Toyota Products in Canada</title>
     <link href="styles.css"  rel="stylesheet">
 </head>
 <body>
     <h1><a href="https://www.toyota.ca/toyota/en/"><img class="emblem" src="/images/toyota/toyota.png" alt="Toyota emblem" width="500"></a></h1>
     <h1>Products Currently Available in Canada</h1>
-
-
     <?php
     $connect = mysqli_connect(
         'sql200.epizy.com',//Host
@@ -25,7 +23,6 @@
         echo mysqli_connect_error();
         exit();
     }
-
     $query = "SELECT *
     FROM toyota
     ORDER BY id";
@@ -58,6 +55,7 @@
     echo '</div>';
     // Toyota logo/emblem found at: https://commons.wikimedia.org/wiki/File:Toyota.svg
     // All Toyota vehicle model previews, information, links, icons, etc. taken from: https://www.toyota.ca and are trademarked, copyrighted, and owned by Toyota; Kee-Fung Anthony is no affiliated with Toyota and is using said properties for academic and recreational purposes.
+    echo '<footer class="disclaimer">All Toyota vehicle model previews, information, links, icons, etc. taken from: https://www.toyota.ca and are trademarked, copyrighted, and owned by Toyota; Kee-Fung Anthony Ho is not affiliated with Toyota and is using said properties for academic and recreational purposes.</footer>';
     ?>
 </body>
 </html>
